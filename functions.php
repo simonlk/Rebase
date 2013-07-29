@@ -169,13 +169,10 @@ function re_content_wrap_end() {
 /*=========================================
 	ACF Page settings
 ======================================== */
-/* add_action( 'woo_post_inside_before', 're_acf_page_settings', 10);
+add_action( 'woo_post_inside_before', 're_acf_page_settings', 10);
 function re_acf_page_settings() { ?>
-	<style type="text/css" media="screen">
-		.col-full.content {background: url(<?php the_field('background_image'); ?>) #fff top center no-repeat;}
-	</style>
+	<div class="page-head"><img src="<?php the_field('header_image'); ?>" /></div>
 <?php }
-*/
 
 /*=========================================
 	ACF Slider
