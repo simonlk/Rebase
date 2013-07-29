@@ -1,0 +1,96 @@
+
+/*=========================================
+  Contents
+
+- Main Menu Fixed Position
+- Main Menu next to logo
+- Main Menu horizontal
+- Full width body
+
+======================================== */
+
+
+/*=========================================
+  Main Menu Fixed Position
+======================================== */
+/*
+#nav-container {position: fixed; top: 0; width: 100%; z-index: 999;}
+body.admin-bar #nav-container {margin-top:28px;}
+body {margin-top: 68px;}
+*/
+
+/*=========================================
+  Main Menu next to logo
+======================================== */
+#nav-container {float: right; padding: 0;}
+#nav-container ul.nav {margin-right: 0px;}
+
+
+/*=========================================
+	Main Menu
+======================================== */
+
+#nav-container {background: #fff; border: 0px solid #ddd; border-left: 0px; border-right: 0px;
+	/*-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px;*/}
+
+#nav-container,
+#navigation {
+	background: transparent;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+}
+
+ul.nav li a {
+	color: #5e5e5e;
+}
+
+#nav-container #navigation ul#main-nav > li:first-child {
+  border-left: 0px solid #DBDBDB;
+}
+
+#navigation ul.nav > li {
+	border-right: 0px solid #e6e6e6;
+}
+
+ul.nav li a {
+	padding: 1.8em 1.3em !important;
+	font-size: 1em;
+}
+
+#navigation ul.nav > li:hover,
+#navigation ul.nav > li a:hover {
+	background: none;
+	color: #000;
+}
+
+#navigation ul.nav li.current_page_item a, 
+#navigation ul.nav li.current_page_parent a, 
+#navigation ul.nav li.current-menu-ancestor a, 
+#navigation ul.nav li.current-cat a, 
+#navigation ul.nav li.current-menu-item a {
+	background: none;
+	color: #5e5e5e;
+}
+
+#navigation ul.nav li.current_page_item a:hover, 
+#navigation ul.nav li.current_page_parent a:hover, 
+#navigation ul.nav li.current-menu-ancestor a:hover, 
+#navigation ul.nav li.current-cat a:hover, 
+#navigation ul.nav li.current-menu-item a:hover {
+	background: none;
+	color: #000;
+}
+
+
+
+/*=========================================
+  Full width body
+======================================== */
+/*
+#content.col-full {max-width: 100% !important;}
+body.full-width #content {padding-left: 0; padding-right: 0; }
+.col-full.content {background: #fff; width: 660px; padding: 70px 160px;}
+*/

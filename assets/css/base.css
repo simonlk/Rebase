@@ -1,0 +1,362 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+
+/*=========================================
+	Canvas - Global
+======================================== */
+#comments {display: none;}
+h2,h3 {}
+
+/* Start - full width */
+body {padding: 0; background:#f8f8f8; }
+#wrapper {padding:0;max-width: 100% !important;}
+#top {}
+#header-container {background: #fff;}
+#nav-container {}
+#body-container {padding: 0 20px;}
+#content {padding:0 20px;}
+#footer-container {}
+/* End full width */
+
+#main ul,
+#sidebar .textwidget {
+	clear: both;
+	list-style-position: inside;
+	list-style-type: disc;
+}
+
+.entry h1, .entry h2, .entry h3, .entry h4, .entry h5, .entry h6 {}
+
+.post, .search .page {}
+
+
+/*=========================================
+	Typography
+======================================== */
+body,
+.entry, 
+.entry p,
+p {font: 400 16px/24px 'Open Sans', arial, sans-serif;color: #555;}
+#logo .site-title,
+#logo .site-description,
+.entry .quote cite {font-family: 'Open Sans', arial, sans-serif; font-size: 1em;}
+.above-menu-widget {font-size: 1.6em; font-weight: 300; line-height: 1.4em; color: #000;}
+.page-title, 
+.post .title, 
+.page .title{font-size: 2.5em; color: #000; letter-spacing: -3px;}
+h1,h2,h3,h4, .page .title {font-family: 'Open Sans', arial, sans-serif;}
+h1 {font-size: 2.5em; color: #000; letter-spacing: -3px;}
+.page-title, .post .title, .page .title {margin: 0; line-height: 1.5em;}
+h2 {font-family: 'Open Sans Condensed', arial, sans-serif;  font-size: 1.4em;}
+h3 {font-family: 'Open Sans Condensed', arial, sans-serif; font-size: 1.2em;}
+.entry h2 {}
+#navigation {font: 300 14px/14px 'Open Sans', arial, sans-serif;}
+p, 
+.entry, 
+.entry p {}
+.entry p,
+body#tinymce.wp-editor p {margin-bottom: 1.2em;}
+.widget h3 {font: normal bold 14px 'Open Sans', arial, sans-serif; padding: 0 0 0.8em; margin: 0 0 0.8em 0;}
+.widget p {}
+.widget blockquote p,
+.entry blockquote p,
+body#tinymce.wp-editor blockquote p {font-family: Georgia; font-style: italic; font-size: 1.6em; color: #717171; line-height: 1.4em;}
+
+#footer p {color: #999; font-size: 13px;}
+
+/*=========================================
+	Universal
+======================================== */
+a, 
+a:link,
+a:visited {/*color: #48798d;*/}
+a:hover {color: #78A22F; text-decoration: none;}
+
+input:focus, textarea:focus {
+	border-color: rgba(82, 168, 236, 0.8) !important;
+	background: #fff;
+	border-width:1px !important;
+	box-shadow: 0 0 3px #aaa !important;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.entry .quote cite:before {
+	content: none;
+}
+.widget {}
+.widget ul,
+.widget ul li {list-style-type: none; margin: 0px; padding: 0px;}
+i {color: #aaa;}
+
+/*=========================================
+	Library
+======================================== */
+.contact {}
+.phone {}
+.hours {}
+.btn.arrow {}
+.btn.arrow:hover {}
+.btn.cta {}
+.btn.cta:hover {}
+.col-full {}
+.alignleft {}
+.center {text-align: center;}
+
+.bg-white {background: #fff;}
+
+ul.plain-list,
+ul.plain-list li {}
+
+.entry .text-large {font-size: 1.7em; line-height: 1.3em;}
+.entry .text-small,
+.entry .text-small p {font-size: 0.9em; line-height: 1.7em;}
+.entry .text-light {font-weight: 300;}
+.entry .text-caps {}
+.entry .text-black {color: #000;}
+
+.single-col {margin: 0 auto; float:none !important;}
+
+.no-border {border: none !important;}
+.no-pad {padding: 0 !important; }
+
+.section {padding: 70px 0; position: relative;}
+.entry .section-img {position: absolute; bottom: -20px; padding: 0; border: none; background: none;}
+
+.cta {padding: 60px 0px; text-align: center;}
+.cta span.cta-text {padding-right:1em; font-size: 1.2em;}
+
+a.btn,
+input[type=submit],
+body #wrapper #content .button {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 15px 30px !important;
+	display: inline-block;
+	margin: 0px;
+	
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	font-weight: 300;
+	color: #fff;
+	background: #1a1a1a;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+}
+
+a.btn:hover {top:-2px;text-decoration: none;}
+a.btn:active {top: 2px;}
+
+a.btn-black {background: #1a1a1a;}
+.btn-black:hover {background: #000;}
+
+a.btn-yellow {background: #fcad26;color: #fff;}
+.btn-yellow:hover {	background: #f29e0d;}
+
+a.btn-blue {background: #72b3d7;color: #fff;}
+.btn-blue:hover {	background: #5b9bbf;}
+
+/* Columns */
+.span10 {width:80%;}
+
+/* Grid */
+.grid-item {background: #fff; float: left;}
+.grid-item h3 {text-align: center; padding: 10px; font-weight: 300; font-size: 1.0em;}
+
+/* Menus */
+ul.menu,
+ul.menu li {margin: 0px; padding: 0px; list-style-type: none;}
+
+/*=========================================
+	Header
+======================================== */
+#header {padding:40px 0 35px;}
+
+
+/*=========================================
+	Logo
+======================================== */
+#logo {text-align: center;}
+#logo img {}
+
+
+/*=========================================
+	Above menu widget
+======================================== */
+.above-menu-widget {text-align: center; float: none; bottom: 45px; position: absolute; right: 1.618em;}
+
+
+/*=========================================
+	Main menu
+======================================== */
+#nav-container {padding: 0px;}
+body.admin-bar {} /* Logged in and admin bar active */
+body.admin-bar #nav-container {} /* Logged in and admin bar active */
+#navigation {}
+ul.nav {}
+#navigation ul.nav li a {}
+ul.nav li a { font-weight: bold;}
+
+/* Home */
+.home-icon,
+.home-icon:hover {background: url(assets/img/home-icon.png) no-repeat left center !important; text-indent: -999em; width: 70px;}
+
+#navigation ul li:first-child, #navigation ul li:first-child a {}
+#navigation ul.nav li,
+#navigation ul.nav li:hover,
+#navigation ul.nav li a,
+#navigation ul.nav li a:hover {}
+#navigation ul.nav > li {}
+
+/* Hover */
+#navigation ul.nav > li:hover {}
+#navigation ul.nav > li a:hover {}
+
+/* Active */
+#navigation ul.nav li.current_page_item a, 
+#navigation ul.nav li.current_page_parent a, 
+#navigation ul.nav li.current-menu-ancestor a, 
+#navigation ul.nav li.current-cat a, 
+#navigation ul.nav li.current-menu-item a {}
+
+/* Mobile */
+#header .nav-toggle {margin-top: 0px;}
+
+
+/*=========================================
+	Mobile nav
+======================================== */
+
+
+/*=========================================
+	Content
+======================================== */
+body h1,
+body .subtitle {}
+#content {padding-top: 30px;}
+#content header {}
+#content header .subtitle {}
+#content.col-full {margin-bottom: 50px;}
+.services {}
+.service {}
+
+
+
+
+/*=========================================
+	Sidebar
+======================================== */
+#sidebar {overflow: visible;}
+#sidebar .gform_wrapper .top_label input.medium, 
+#sidebar .gform_wrapper .top_label select.medium {width: 100%;}
+#sidebar .gform_wrapper .top_label input.large, 
+#sidebar .gform_wrapper .top_label select.large, 
+#sidebar .gform_wrapper .top_label textarea.textarea {width: 100% !important;}
+#sidebar .widget {background: #fff; padding: 20px 15px; border-top: 6px solid #97d2c9;border-radius: 2px;-webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.10);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.10);
+}
+
+
+/*=========================================
+	Footer
+======================================== */
+#footer-widgets-container {background: #F5F5F5;border-top: 1px solid #e5e5e5; }
+#footer-widgets {border: none;}
+#footer-container {background: #1a1a1a; color: #999;}
+#footer-container a {color: #fff;}
+#footer {border:none; padding: 30px 0 50px 0;}
+
+
+/*=========================================
+	Page - Single
+======================================== */
+
+
+/*=========================================
+	Page - home
+======================================== */
+.home #content header {}
+.home #body-container {padding: 0;}
+.home .col-full.content {width: 100% !important; margin: 0; max-width: 100% !important; background: none; padding: 0px;}
+body.home.full-width #content {padding: 0;}
+body.home h1,
+body.home .subtitle {}
+
+
+/*=========================================
+	Slides
+======================================== */
+.slides {}
+.slides .slide p,
+.slides .slide h2 {}
+.slides .slide p {}
+.slides .slide .content {}
+.slides .slide img {margin-top: 0; margin-bottom: 0;}
+.slides .slide .text,
+.slides .slide .image {margin-bottom: 0;}
+
+
+
+/*=========================================
+	Plugin - Testimonials
+======================================== */
+
+#main .widget_woothemes_testimonials .quote {width: 100%;}
+.entry .quote blockquote  {font-size: 1.3em; color: #777;}
+.entry blockquote:before {font-size: 4em; color: #ccc;}
+.entry .quote cite {font-size: 0.9em;}
+
+
+/*=========================================
+	Plugin - Gravity Forms
+======================================== */
+.gform_wrapper .top_label input.medium, 
+.gform_wrapper .top_label select.medium {width: 100%;}
+.gform_wrapper .top_label input.large, 
+.gform_wrapper .top_label select.large, 
+.gform_wrapper .top_label textarea.textarea {width: 100% !important;}
+.gform_wrapper input,
+.content .gform_wrapper .top_label textarea.textarea {padding: 10px !important;}
+.content .gform_wrapper .top_label .gfield_label {font-weight: 300;}
+.content .gform_wrapper input[type=text],
+.content .gform_wrapper input[type=url],
+.content .gform_wrapper input[type=email],
+.content .gform_wrapper input[type=tel],
+.content .gform_wrapper input[type=number],
+.content .gform_wrapper input[type=password],
+.content .gform_wrapper .top_label textarea.textarea {font-size: 14px;border:1px solid #aaa; box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset; border-radius:2px;}
+
+/*=========================================
+	Media Queries
+==========================================*/
+
+@media only screen and (min-width: 768px) {
+	#body-container {padding: 0px;}
+	.above-menu-widget .phone {}
+	.above-menu-widget .hours {}
+	#nav-container {margin-bottom: 0px;}
+	#navigation { }
+	#logo {text-align: left;}
+	.above-menu-widget {text-align: right; float: right; width: 360px;}
+	.slides .slide h2 {padding-top:1.5em;}
+	.alignleft {}
+	.cta-wrap {}
+	.gform_wrapper .top_label input.medium, 
+	.gform_wrapper .top_label select.medium {width: 100%;}
+	.gform_wrapper .top_label input.large, 
+	.gform_wrapper .top_label select.large {width: 100% !important;}
+	.gform_wrapper .top_label textarea.textarea {max-width: 500px;}
+}

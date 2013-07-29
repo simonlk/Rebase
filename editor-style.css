@@ -1,0 +1,13 @@
+@import url( 'style.css' );
+@import url( 'custom.css' );
+@import url("../canvas/functions/css/shortcodes.css");
+@import url("assets/css/style1.css");
+
+body#tinymce.wp-editor { 
+    max-width:660px; 
+    margin:10px; 
+}
+
+body#tinymce.wp-editor.post-type-slide {
+	max-width: 950px;
+}
