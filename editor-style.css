@@ -1,7 +1,8 @@
 @import url( 'style.css' );
-@import url( 'custom.css' );
+@import url("assets/css/base.css");
+@import url("assets/css/variations.css");
 @import url("../canvas/functions/css/shortcodes.css");
-@import url("assets/css/style1.css");
+@import url( 'custom.css' );
 
 body#tinymce.wp-editor { 
     max-width:660px; 

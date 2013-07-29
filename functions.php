@@ -87,7 +87,7 @@ add_filter('mce_buttons_2', 'my_mce_buttons_2');
 function my_mce_before_init($init_array)
 	{
 		// Now we add classes with title and separate them with;
-		$init_array['theme_advanced_styles'] = "Large text=large-text;Button=woo-sc-button;Box=woo-sc-box normal";
+		$init_array['theme_advanced_styles'] = "Large text=large-text;Button=button;Box=woo-sc-box normal";
 	return $init_array;
 }
 
