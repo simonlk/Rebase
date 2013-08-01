@@ -307,6 +307,8 @@ body.home .subtitle {}
 .slides .slide img {margin-top: 0; margin-bottom: 0;}
 .slides .slide .text,
 .slides .slide .image {margin-bottom: 0;}
+ul.flex-direction-nav,
+ul.flex-direction-nav li {list-style-type: none; margin: none; padding: none;}
 
 
 

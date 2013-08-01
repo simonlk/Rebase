@@ -8,9 +8,31 @@ function re_add_my_stylesheet() {
     // Respects SSL, Style.css is relative to the current file
     wp_enqueue_style( 'variations', get_stylesheet_directory_uri() . '/assets/css/variations.css' );
     wp_enqueue_style( 'base', get_stylesheet_directory_uri() . '/assets/css/base.css' );
+    wp_enqueue_style( 'flexslider', get_stylesheet_directory_uri() . '/assets/css/flexslider.css' );
+    
+    // Themes
+    // wp_enqueue_style( 'westwaters', get_stylesheet_directory_uri() . '/westwaters/custom.css' ); 
+    wp_enqueue_style( 'jumplife', get_stylesheet_directory_uri() . '/jumplife/custom.css' );
+
     wp_enqueue_style('font-awesome', '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
     wp_enqueue_script('smooth-scrolling', get_stylesheet_directory_uri() . '/assets/js/smooth-scrolling.js');
+    wp_enqueue_script('flex-slider', get_stylesheet_directory_uri() . '/assets/js/jquery.flexslider-min.js');
 
+}
+
+
+/*==================================================
+	Javascript
+================================================= */
+add_action('woo_head', 're_header_scripts');
+
+function re_header_scripts () { ?>
+<script type="text/javascript" charset="utf-8">
+  jQuery(window).load(function() {
+    jQuery('.flexslider').flexslider();
+  });
+</script>
+<?php 
 }
 
 
@@ -182,11 +204,12 @@ add_action( 'woo_post_inside_before', 're_acf_slider', 10);
 
 function re_acf_slider () { ?>
 <?php if(get_field('slides')): ?> 
-	<div class="slides">
+<div class="flexslider">
+	<ul class="slides">
 	<?php
 		while(has_sub_field('slides')):
 	?>
-		<div class="slide" style="background-color:<?php the_sub_field('bg_colour'); ?>">
+		<li class="slide" style="background-color:<?php the_sub_field('bg_colour'); ?>">
 			<div class="col-full">
 				<div class="threecol-two image">
 					<img class="" src="<?php the_sub_field('image'); ?>">
@@ -199,13 +222,15 @@ function re_acf_slider () { ?>
 				<?php endif; ?>
 				</div>
 			</div>
- 		</div>
+ 		</li>
 	<?php
 		endwhile; 
 	?>
-	</div> 
+	</ul> 
+</div>
 <?php endif; ?> 
 <?php }
+
 
 
 /*=========================================

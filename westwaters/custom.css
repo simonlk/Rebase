@@ -1,0 +1,40 @@
+/* Body Background */
+body {background: url(http://www.westwaters.com.au/site/images/bg/bg_mainbg.jpg) no-repeat scroll center top #00253b;}
+
+/* Content area boxed with background */
+.col-full.content {background-color: #fff; padding: 30px 30px;}
+
+#header-container {background: transparent;}
+
+.page-title, .post .title, .page .title {}
+
+/*==================================================
+	Navigation
+================================================= */
+ul.nav li a {
+	color: #fff;
+}
+
+#navigation ul.nav li.current_page_item a, 
+#navigation ul.nav li.current_page_parent a, 
+#navigation ul.nav li.current-menu-ancestor a, 
+#navigation ul.nav li.current-cat a, 
+#navigation ul.nav li.current-menu-item a {
+	color: #fff;
+}
+
+#navigation ul.nav > li:hover, 
+#navigation ul.nav > li a:hover {color: #fff;}
+
+
+/*==================================================
+	Sidebar
+================================================= */
+#wrapper #sidebar {margin-top:125px;}
+
+
+/*==================================================
+	Footer
+================================================= */
+#footer-widgets-container {background: #00253b;border: none;}
+#footer-container {background: transparent;}
