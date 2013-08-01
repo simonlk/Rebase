@@ -89,6 +89,8 @@ input:focus, textarea:focus {
 .widget ul,
 .widget ul li {list-style-type: none; margin: 0px; padding: 0px;}
 i {color: #aaa;}
+ul.tabs,
+ul.tabs li {list-style-type: none;margin:0; padding:0;}
 
 /*=========================================
 	Library
@@ -176,6 +178,13 @@ a.btn-blue {background: #72b3d7;color: #fff;}
 /* Menus */
 ul.menu,
 ul.menu li {margin: 0px; padding: 0px; list-style-type: none;}
+
+
+/*==================================================
+	Layout
+================================================= */
+
+
 
 /*=========================================
 	Header
@@ -341,6 +350,23 @@ ul.flex-direction-nav li {list-style-type: none; margin: none; padding: none;}
 .content .gform_wrapper input[type=password],
 .content .gform_wrapper .top_label textarea.textarea {font-size: 14px;border:1px solid #aaa; box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset; border-radius:2px;}
 
+
+/*==================================================
+	WooCommerce - Category
+================================================= */
+ul.products li.product {margin-bottom: 3em; text-align: left;}
+ul.products li.product img {
+	-webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+}
+ul.products li.product .price {font-size: 0.8em; margin: 0.2em 0;}
+ul.products li.product .price .amount {font-size: 1.4em; color: #000; font-weight: bold;}
+body #wrapper #content ul.products li.product .button {padding: 8px 10px !important; font-size: 0.9em; margin-top:8px;}
+ul.products li.product h3 {font-size: 1.0em; text-align: left; font-family: 'Open Sans', arial, sans-serif; font-weight: 300; max-height: 2.5em; overflow: hidden;}
+ul.products li.product .star-rating {display: none;}
+
+
 /*=========================================
 	Media Queries
 ==========================================*/
@@ -354,6 +380,11 @@ ul.flex-direction-nav li {list-style-type: none; margin: none; padding: none;}
 	#logo {text-align: left;}
 	.above-menu-widget {text-align: right; float: right; width: 360px;}
 	.slides .slide h2 {padding-top:1.5em;}
+	.two-col-left #main-sidebar-container #main, 
+	.two-col-right #main-sidebar-container #main {width: 73.89%;}
+	.two-col-left #main-sidebar-container #sidebar, 
+	.two-col-right #main-sidebar-container #sidebar,
+	.two-col-right-1100 #main-sidebar-container #sidebar {width: 22.91%;}
 	.alignleft {}
 	.cta-wrap {}
 	.gform_wrapper .top_label input.medium, 

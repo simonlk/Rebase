@@ -10,12 +10,15 @@ function re_add_my_stylesheet() {
     wp_enqueue_style( 'base', get_stylesheet_directory_uri() . '/assets/css/base.css' );
     wp_enqueue_style( 'flexslider', get_stylesheet_directory_uri() . '/assets/css/flexslider.css' );
     
-    // Themes
+    /* Themes */
+
     // wp_enqueue_style( 'westwaters', get_stylesheet_directory_uri() . '/westwaters/custom.css' ); 
     wp_enqueue_style( 'jumplife', get_stylesheet_directory_uri() . '/jumplife/custom.css' );
 
+    /* END Themes */
+
     wp_enqueue_style('font-awesome', '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
-    wp_enqueue_script('smooth-scrolling', get_stylesheet_directory_uri() . '/assets/js/smooth-scrolling.js');
+    //wp_enqueue_script('smooth-scrolling', get_stylesheet_directory_uri() . '/assets/js/smooth-scrolling.js');
     wp_enqueue_script('flex-slider', get_stylesheet_directory_uri() . '/assets/js/jquery.flexslider-min.js');
 
 }
@@ -302,4 +305,17 @@ function re_acf_content () { ?>
 <?php endwhile; ?> 
 <?php }
 
+/*==================================================
+	WooCommerce
+================================================= */
+
+// Change number or products per row to 3
+/* 
+add_filter('loop_shop_columns', 'loop_columns');
+if (!function_exists('loop_columns')) {
+	function loop_columns() {
+		return 3; // 3 products per row
+	}
+}
+*/
 ?>

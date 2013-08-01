@@ -6,6 +6,7 @@
 - Main Menu next to logo
 - Main Menu horizontal
 - Full width body
+- WooCommerce product white box
 
 ======================================== */
 
@@ -93,4 +94,23 @@ ul.nav li a {
 #content.col-full {max-width: 100% !important;}
 body.full-width #content {padding-left: 0; padding-right: 0; }
 .col-full.content {background: #fff; width: 660px; padding: 70px 160px;}
+*/
+
+/*==================================================
+	WooCommerce - products white box
+================================================= */
+/*
+ul.products li.product {
+	background: #fff;
+	border: 9px solid #fff;
+	border-left:0px;
+	border-right:0px;
+	border-radius: 3px;
+	padding: 0px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+}
 */
